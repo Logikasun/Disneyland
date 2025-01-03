@@ -83,14 +83,17 @@ h1{
 
 .gallery{
     display: flex;
-    flex-wrap:wrap ;
-    width: 80%;
-    margin: 0px auto;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .gallery img{
-    padding: 20px;
-    width: 300px;
+max-width: 300px;
+padding: 20px;
+}
+
+.gallery img:hover{
+    transform: scale(1.5);
+    transition: 2s;
 }
